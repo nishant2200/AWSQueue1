@@ -38,6 +38,7 @@ namespace AwsSqsSample1
                 var createQueueResponse = sqs.CreateQueue(sqsRequest);
                 string myQueueUrl = createQueueResponse.QueueUrl;
 
+
                 //Confirming the queue exists
                 var listQueuesRequest = new ListQueuesRequest();
                 var listQueuesResponse = sqs.ListQueues(listQueuesRequest);
